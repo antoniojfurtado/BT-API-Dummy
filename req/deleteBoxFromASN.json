@@ -1,6 +1,6 @@
 {
   "data": [{
     "asn_id": 12132232,
-    "AsnShipmentBox": [1213,45234,21343]
+    "asn_shipment_box": [1213,45234,21343]
   }]
 }

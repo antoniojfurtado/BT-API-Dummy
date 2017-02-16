@@ -3,7 +3,7 @@
     "asn_id": 12132232,
     "status": "submitted",
     "shipment_type": "boxes", //pallets or boxes validation
-    "AsnShipmentBox": [{
+    "asn_shipment_box": [{
       "box_no" : 1,
       "length_mm": 20000,
       "breadth_mm": 20000,

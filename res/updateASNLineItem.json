@@ -5,7 +5,7 @@
       "asn_id": 12132232,
       "success": true,
       "message": "ASN updated",
-      "AsnLine": [
+      "asn_line": [
         {
           "asn_line_id": 1212,
           "success": true,
