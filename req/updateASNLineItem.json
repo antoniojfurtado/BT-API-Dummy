@@ -1,0 +1,20 @@
+{
+  "data": [{
+    "asn_id": 12132232,
+    "AsnLine": [{
+      "id": 45,
+      "sku_code": "ABC123",
+      "quantity_sent": 4,
+      "labels_to_print": 6
+    },{
+      "id": 12,
+      "sku_code": "BCD321",
+      "quantity_sent": 3,
+      "labels_to_print": 9
+    }{
+      "id": 434,
+      "sku_code": "BCD321",
+      "quantity_sent": 2
+    }]
+  }]
+}

@@ -1,0 +1,22 @@
+{
+  "success": "partial", //"true" and "false"
+  "message": [
+    {
+      "asn_id": 12132232,
+      "success": true,
+      "message": "ASN updated",
+      "AsnShipmentBox": [
+        {
+          "box_id": 12342,
+          "success": true,
+          "message": "Box deleted"
+        },
+        {
+          "box_id": 1234234,
+          "success": false,
+          "message": "Box not found"
+        }
+      ]
+    }
+  ]
+}

@@ -55,8 +55,8 @@ closed          When all disputes (if any) on the ASN are resolved
       "weight": 23, // current status = draft
       "courier_company_id": "", // current status = draft
       "label_type": "", // current status = draft
-      "awb_number": 24, //
-      "carrier_status": "" //
+      "awb_number": 24, // after draft before shipped
+      "carrier_status": "" // after draft before shipped
     }, {
       "no": 1,
       "length_mm": "ABC123",

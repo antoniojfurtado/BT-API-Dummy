@@ -1,0 +1,11 @@
+ASN Statuses & Meanings
+-----------------------
+
+draft           While the user is in the process of creating the ASN
+submitted       After completion, user can submit the ASN to the warehouse
+confirmed       After the warehouse confirms that the ASN has been received and generates a reference number for the same (stored in asn_wm_ref)
+ready_to_ship   When the ASN is packed and ready for the carrier to pickup
+shipped         When the carrier picks up the ASN
+received/qc_pending        When the shipment is received at the warehouse. The counting of items happens at this point and quantity_received is updated against each SKU. QC is done after this step
+qc_completed    When the QC of the items received is done and good/bad inventory is bifurcated.
+closed          When all disputes (if any) on the ASN are resolved

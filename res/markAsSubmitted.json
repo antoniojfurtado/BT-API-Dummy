@@ -1,0 +1,27 @@
+{
+  "success": "partial", //"true" and "false"
+  "message": [
+    {
+      "asn_id": 12132232,
+      "success": true,
+      "message": "ASN updated",
+      "AsnShipmentBox": [
+        {
+          "box_id": 1234,
+          "success": true,
+          "message" : "Box 3 created successfully"
+        },
+        {
+          "box_id": 34532,
+          "success": true,
+          "message" : "Box 3 created successfully"
+        },
+        {
+          "box_id": 3345345,
+          "success": true,
+          "message" : "Box 3 created successfully"
+        }
+      ]
+    }
+  ]
+}

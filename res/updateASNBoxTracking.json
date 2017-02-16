@@ -1,0 +1,27 @@
+{
+  "success": "partial", //"true" and "false"
+  "message": [
+    {
+      "asn_id": 12132232,
+      "success": true,
+      "message": "ASN updated",
+      "AsnShipmentBox": [
+        {
+          "box_id": 1,
+          "success": true,
+          "message": "Box tracking number updated"
+        },
+        {
+          "box_id": 2,
+          "success": true,
+          "message": "Box shipping carrier status updated"
+        },
+        {
+          "box_id": 3,
+          "success": false,
+          "message": "Box does not exist"
+        }
+      ]
+    }
+  ]
+}

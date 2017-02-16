@@ -1,0 +1,19 @@
+{
+  "success": "true",
+  "result_count": 1,
+  "results_per_page": 1,
+  "page": 1,
+  "data": [{
+    "sku_id": 12132232,
+    "sku_code": "iPhone7",
+    "product_name": "I Phone 7", //pallets or boxes validation
+    "qty_in_asn": 10 //pallets or boxes validation
+  },
+    {
+      "sku_id": 12132232,
+      "sku_code": "iPhone6",
+      "product_name": "I Phone 6", //pallets or boxes validation
+      "qty_in_asn": 4 //pallets or boxes validation
+    }
+  ]
+}

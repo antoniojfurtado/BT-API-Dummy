@@ -1,0 +1,34 @@
+{
+  "data": [{
+    "asn_id": 12132232,
+    "status": "submitted",
+    "shipment_type": "boxes", //pallets or boxes validation
+    "AsnShipmentBox": [{
+      "box_no" : 1,
+      "length_mm": 20000,
+      "breadth_mm": 20000,
+      "height_mm": 20000,
+      "weight_gm": 20000,
+      "label_type" : "",
+      "courier_name": ""
+    },
+      {
+        "box_no" : 2,
+        "length_mm": 200300,
+        "breadth_mm": 230000,
+        "height_mm": 420000,
+        "weight_gm": 520000,
+        "label_type" : "",
+        "courier_name": ""
+      },
+      {
+        "box_no" : 3,
+        "length_mm": 220000,
+        "breadth_mm": 220000,
+        "height_mm": 220000,
+        "weight_gm": 320000,
+        "label_type" : "",
+        "courier_name": ""
+      }]
+  }]
+}

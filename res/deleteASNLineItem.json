@@ -1,0 +1,27 @@
+{
+  "success": "partial", //"true" and "false"
+  "message": [
+    {
+      "asn_id": 12132232,
+      "success": true,
+      "message": "ASN updated",
+      "AsnLines": [
+        {
+          "asn_line_id": 23243,
+          "success": true,
+          "message": "Line Item deleted"
+        },
+        {
+          "asn_line_id": 23243,
+          "success": true,
+          "message": "Line Item deleted"
+        },
+        {
+          "asn_line_id": 23243,
+          "success": false,
+          "message": "Line Item does not exists"
+        }
+      ]
+    }
+  ]
+}
