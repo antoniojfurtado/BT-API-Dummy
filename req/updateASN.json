@@ -1,0 +1,82 @@
+/***
+ASN Statuses & Meanings
+-----------------------
+
+draft           While the user is in the process of creating the ASN
+submitted       After completion, user can submit the ASN to the warehouse
+confirmed       After the warehouse confirms that the ASN has been received and generates a reference number for the same (stored in asn_wm_ref)
+ready_to_ship   When the ASN is packed and ready for the carrier to pickup
+shipped         When the carrier picks up the ASN
+received/qc_pending        When the shipment is received at the warehouse. The counting of items happens at this point and quantity_received is updated against each SKU. QC is done after this step
+qc_completed    When the QC of the items received is done and good/bad inventory is bifurcated.
+closed          When all disputes (if any) on the ASN are resolved
+
+**/
+
+
+{
+  "data": [{
+    "asn_id": 12132232,
+    "status": "qc_pending",
+    "asn_wms_ref": "sdsd", // current status = submitted, new status = confirmed
+    "asn_boxes_received_count": 2, // current status = confirmed, new status = qc_pending
+    "label_format": 2,
+    "shipment_type": 2,
+    "AsnLine": [{
+      "id": 23243,
+      "sku_code": "ABC123",
+      "quantity_sent": 100, // current status = draft
+      "labels_to_print": 600, // current status = draft
+      "quantity_received": 23, // current status = shipped, new status = qc_pending
+      "quantity_qc_passed": 24, // current status = qc_pending, new status = qc_completed
+      "qc_fail_reason": "Phones were actually bricks" // current status = qc_pending, new status = qc_completed
+    }, {
+      "id": 23243,
+      "sku_code": "ABC123",
+      "quantity_sent": 100,
+      "labels_to_print": 600,
+      "quantity_received": 23,
+      "quantity_qc_passed": 24,
+      "qc_fail_reason": "Phones were actually bricks"
+    }, {
+      "id": 23243,
+      "sku_code": "ABC123",
+      "quantity_sent": 100,
+      "labels_to_print": 600,
+      "quantity_received": 23,
+      "quantity_qc_passed": 24,
+      "qc_fail_reason": "Phones were actually bricks"
+    }],
+    "AsnShipmentBox": [{
+      "no": 1, // current status = draft
+      "length_mm": "ABC123", // current status = draft
+      "breadth_mm": 100, // current status = draft
+      "height_mm": 600, // current status = draft
+      "weight": 23, // current status = draft
+      "courier_company_id": "", // current status = draft
+      "label_type": "", // current status = draft
+      "awb_number": 24, //
+      "carrier_status": "" //
+    }, {
+      "no": 1,
+      "length_mm": "ABC123",
+      "breadth_mm": 100,
+      "height_mm": 600,
+      "weight": 23,
+      "awb_number": 24,
+      "courier_company_id": "",
+      "label_type": "",
+      "carrier_status": ""
+    }, {
+      "no": 1,
+      "length_mm": "ABC123",
+      "breadth_mm": 100,
+      "height_mm": 600,
+      "weight": 23,
+      "awb_number": 24,
+      "courier_company_id": "",
+      "label_type": "",
+      "carrier_status": ""
+    }]
+  }]
+}

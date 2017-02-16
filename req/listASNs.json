@@ -1,0 +1,10 @@
+?username=XXXXXXXXXX
+&auth_string=YYYYYYYYY
+&created_from='2014-01-01 00:00:00' (optional)
+&created_to='2014-04-01 00:00:00'(optional)
+&modified_from='2014-01-01 00:00:00' (optional)
+&modified_to='2014-04-01 00:00:00'(optional)
+&stauts=draft (optional)
+&asn_id=3 (optional)
+&asn_wms_ref=XXXX (optional)
+&page=1
