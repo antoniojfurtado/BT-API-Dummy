@@ -1,6 +1,4 @@
 <?php
-/*print sha1('ncxzIq9aXVcOj7oznkULzggUVBQkUaDi'.'f4d927b5566ccd76a918586e6521adb0ead9b8f9');
-die;*/
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
