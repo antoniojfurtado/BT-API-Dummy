@@ -1,7 +1,7 @@
 {
   "data": [{
     "asn_id": 12132232,
-    "status": "submitted", //Can this be ready_to_ship or shipped - Does the field matter after submitted?
+    "status": "shipped",
     "asn_shipment_box": [{
       "id" : 1234,
       "awb_number": 20000,
