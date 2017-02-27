@@ -22,3 +22,4 @@ $print_labes->setLabels(['ID : 1234', 'ID : 123456' , 'ID : 123456' , 'ID : 1234
     'ID : 1234', 'ID : 123456' , 'ID : 123456' , 'ID : 123456' , 'ID : 123456' , 'ID : 123456'
 ]);
 $print_labes->AddLabelsToPdf();
+$print_labes->Output('Labels.pdf', 'D');

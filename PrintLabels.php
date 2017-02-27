@@ -2,7 +2,7 @@
 
 require('fpdf/fpdf.php');
 
-class PrintLabels
+class PrintLabels extends FPDF
 {
 
     private $top_margin;
@@ -19,7 +19,7 @@ class PrintLabels
     /**
      * @param mixed $top_margin
      */
-    private function setTopMargin($top_margin)
+    private function setTopMarg($top_margin)
     {
         $this->top_margin = is_numeric($top_margin) ? $top_margin : NULL;
     }
@@ -113,19 +113,18 @@ class PrintLabels
 
         ) {
 
-            $pdf = new FPDF();
-            $pdf->AddPage();
-            $pdf->SetFont('Helvetica', 'B', 10);
-            $pdf->SetMargins(0, 0);
-            $pdf->SetAutoPageBreak(false);
+            $this->AddPage();
+            $this->SetFont('Helvetica', 'B', 10);
+            $this->SetMargins(0, 0);
+            $this->SetAutoPageBreak(false);
             $x = $y =  $x_across = $y_across = 0;
 
             foreach($this->labels as $label) {
 
                 $x = $this->side_margin + ($this->horizontal_pitch * $x_across);
                 $y = $this->top_margin + ($this->vertical_pitch * $y_across);
-                $pdf->SetXY($x, $y);
-                $pdf->MultiCell($this->label_width, $this->label_height, $label, 1, 'C');
+                $this->SetXY($x, $y);
+                $this->MultiCell($this->label_width, $this->label_height, $label, 1, 'C');
 
 
                 $y_across++; // next row
@@ -135,11 +134,10 @@ class PrintLabels
                     if($x_across == $this->labels_across) { // end of page
                         $x_across = 0;
                         $y_across = 0;
-                        $pdf->AddPage();
+                        $this->AddPage();
                     }
                 }
             }
-            $pdf->Output('Labels.pdf', 'D');
         } else {
             print "Labels data or config data not present";
         }
@@ -148,10 +146,10 @@ class PrintLabels
     }
 
     public function setConfig($config) {
-
+        
             $this->setHorizontalPitch($config['HORIZONTAL_PITCH']);
             $this->setVerticalPitch($config['VERTICAL_PITCH']);
-            $this->setTopMargin($config['TOP_MARGIN']);
+            $this->setTopMarg($config['TOP_MARGIN']);
             $this->setSideMargin($config['SIDE_MARGIN']);
             $this->setLabelHeight($config['LABEL_HEIGHT']);
             $this->setLabelWidth($config['LABEL_WIDTH']);
