@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17029599-549c-46cc-8027-dc2f4c2b3c41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrintLabels.php" afterPath="$PROJECT_DIR$/PrintLabels.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/label.php" afterPath="$PROJECT_DIR$/label.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/print-labels.php" afterPath="$PROJECT_DIR$/print-labels.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,28 +41,30 @@
       <file leaf-file-name="label.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/label.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintLabels.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PrintLabels.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PrintLabels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="182" column="28" lean-forward="false" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="810">
+              <caret line="142" column="16" lean-forward="true" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+              <folding>
+                <marker date="1488198275524" expanded="true" signature="4153:4154" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print-labels.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="print-labels.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/print-labels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -116,9 +116,17 @@
     <findStrings>
       <find>$json</find>
       <find>$arr</find>
+      <find>const</find>
+      <find>$configs[$config]</find>
+      <find>public function set</find>
+      <find>) &amp;&amp;</find>
     </findStrings>
     <replaceStrings>
       <replace>$file_content</replace>
+      <replace>'</replace>
+      <replace>$config</replace>
+      <replace>private function set</replace>
+      <replace>') &amp;&amp;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -165,8 +173,8 @@
         <option value="$PROJECT_DIR$/auth.php" />
         <option value="$PROJECT_DIR$/PDF_Label.php" />
         <option value="$PROJECT_DIR$/label.php" />
-        <option value="$PROJECT_DIR$/print-labels.php" />
         <option value="$PROJECT_DIR$/PrintLabels.php" />
+        <option value="$PROJECT_DIR$/print-labels.php" />
       </list>
     </option>
   </component>
@@ -223,6 +231,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -315,12 +324,12 @@
       <workItem from="1487249084511" duration="4203000" />
       <workItem from="1487565284005" duration="4284000" />
       <workItem from="1487741547179" duration="23083000" />
-      <workItem from="1488192018279" duration="1895000" />
+      <workItem from="1488192018279" duration="5957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53463000" />
+    <option name="totallyTimeSpent" value="57525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -613,24 +622,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/label.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/print-labels.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PrintLabels.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="182" column="28" lean-forward="false" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
+        <state relative-caret-position="810">
+          <caret line="142" column="16" lean-forward="true" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+          <folding>
+            <marker date="1488198275524" expanded="true" signature="4153:4154" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/print-labels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>
