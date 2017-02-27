@@ -21,7 +21,7 @@ class PrintLabels
      */
     private function setTopMargin($top_margin)
     {
-        $this->top_margin = $top_margin;
+        $this->top_margin = is_numeric($top_margin) ? $top_margin : NULL;
     }
 
     /**
@@ -29,7 +29,7 @@ class PrintLabels
      */
     private function setSideMargin($side_margin)
     {
-        $this->side_margin = $side_margin;
+        $this->side_margin = is_numeric($side_margin) ? $side_margin : NULL;
     }
 
     /**
@@ -37,7 +37,7 @@ class PrintLabels
      */
     private function setVerticalPitch($vertical_pitch)
     {
-        $this->vertical_pitch = $vertical_pitch;
+        $this->vertical_pitch = is_numeric($vertical_pitch) ? $vertical_pitch : NULL;
     }
 
     /**
@@ -45,7 +45,7 @@ class PrintLabels
      */
     private function setHorizontalPitch($horizontal_pitch)
     {
-        $this->horizontal_pitch = $horizontal_pitch;
+        $this->horizontal_pitch = is_numeric($horizontal_pitch) ? $horizontal_pitch : NULL;
     }
 
     /**
@@ -53,7 +53,7 @@ class PrintLabels
      */
     private function setLabelHeight($label_height)
     {
-        $this->label_height = $label_height;
+        $this->label_height = is_numeric($label_height) ? $label_height : NULL;
     }
 
     /**
@@ -61,7 +61,7 @@ class PrintLabels
      */
     private function setLabelWidth($label_width)
     {
-        $this->label_width = $label_width;
+        $this->label_width = is_numeric($label_width) ? $label_width : NULL;
     }
 
     /**
@@ -69,7 +69,7 @@ class PrintLabels
      */
     private function setLabelsAcross($labels_across)
     {
-        $this->labels_across = $labels_across;
+        $this->labels_across = is_numeric($labels_across) ? $labels_across : NULL;
     }
 
     /**
@@ -77,7 +77,7 @@ class PrintLabels
      */
     private function setLabelsAlong($labels_along)
     {
-        $this->labels_along = $labels_along;
+        $this->labels_along = is_numeric($labels_along) ? $labels_along : NULL;
     }
 
     /**
@@ -85,7 +85,7 @@ class PrintLabels
      */
     public function setLabels($labels)
     {
-        $this->labels = $labels;
+        $this->labels = is_array($labels) ? $labels : NULL;
     }
 
     private function property_isset($property)
